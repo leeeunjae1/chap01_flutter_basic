@@ -23,7 +23,14 @@ class MyApp extends StatelessWidget {
           title: Text('Appbar'),
           backgroundColor: Colors.blue,
         ),
-        body: Text('Body입니다.'),
+
+        body: Container(
+          color: Colors.yellow,
+          child: Center(
+            child: Text("Body입니다."),
+          ),
+        ),
+
         // BottomNavigationBar
         bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[
